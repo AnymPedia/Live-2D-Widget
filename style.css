@@ -1,0 +1,168 @@
+body {
+    background-color: #f9fafb;
+    font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
+}
+.navbar {
+    background-color:rgb(255, 255, 255);
+    width:100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border: solid whitesmoke 2px;
+    z-index: 1;
+}
+.logo {
+    font-weight: bold;
+    float: left;
+    padding-left:15px;
+}
+li {
+    list-style: none;
+    float: right;
+    padding-right:30px;
+    font-weight: bold;
+}
+.menu1 {
+    color: #0060B6;
+    text-decoration: none;
+}
+.bungkus {
+padding-top:60px;
+}
+.listvtuber {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+    border: solid rgb(216, 223, 206) 1px;
+}
+.card img {
+    max-width: 300px;
+    max-height:300px;
+    object-fit: cover;
+}
+.card p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.area {
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.area h1 {
+    color:green;
+    text-align: center;
+}
+.area p {
+    font-weight: lighter;
+    text-align: center;
+}
+footer {
+    background-color:rgba(0, 0, 0, 0.575);
+    width:100%;
+    height: 50px;
+    text-align:center;
+    border-radius: 10px;
+    bottom: 0;
+    right: 0;
+}
+footer p {
+    color: white;
+    padding:15px;
+}
+.yutub {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+    color: red;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.yutub:hover {
+	background-color:transparent;
+}
+.yutub:active {
+	position:relative;
+	top:1px;
+}
+.twit {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+    color:blue;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.twit:hover {
+	background-color:transparent;
+}
+.twit:active {
+	position:relative;
+	top:1px;
+}
+.kartu {
+    background-color:white;
+    width:300px;
+    height:300px;
+    color:black;
+    padding:10px;
+    margin:auto;
+}
+.shadow-drop-2-center{-webkit-animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+ @-webkit-keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+.flip {
+	-webkit-animation: flip 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+ @-webkit-keyframes flip {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) rotateY(180deg);
+            transform: translateZ(160px) rotateY(180deg);
+  }
+}
+@keyframes flip {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) rotateY(180deg);
+            transform: translateZ(160px) rotateY(180deg);
+  }
+}
+
+/**Responsive Phone**/
+@media (max-width: 1000px) {
+  .listvtuber {
+    flex-direction: column;
+    margin:10px;
+    padding:0;
+  }
+  footer {
+    background-color:rgba(0, 0, 0, 0.575);
+    width:100%;
+    height: 50px;
+  }
+}
