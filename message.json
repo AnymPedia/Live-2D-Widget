@@ -1,0 +1,18 @@
+{
+	"mouseover": [{
+		"selector": "#live2d",
+		"text": ["Hey Kenapa Kamu Menyentuhku","Hentai!"]
+	},{
+		"selector": "#sena",
+		"text": ["Nekoyama Sena, Dia adalah Vtuber Yang Berasal Dari Indonesia","Berasal dari agensi Yume Reality","Kucing imut yang suka bermain game"]
+	},{
+		"selector": "#gura",
+		"text": ["Gawr Gura, saat ini merupakan vtuber dengan subscriber terbanyak", "dia berasal dari agensi Hololive En", "Hiu yang imut dan memiliki kostum telinga kucing"]
+	}, {
+		"selector": "#moona",
+		"text": ["Moona Hoshinova, Berasal dari Hololive ID"]
+	}, {
+		"selector": "#lofi",
+		"text": ["Airani Lofifteen Vtuber dari Hololive Id dia Sangat suka menggambar"]
+	}]
+}

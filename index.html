@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<head>
+	<title>AnymPedia Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style type="text/css">
+body {
+    background-color: #f9fafb;
+    font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
+}
+.navbar {
+    background-color:rgb(255, 255, 255);
+    width:100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border: solid whitesmoke 2px;
+    z-index: 1;
+}
+.logo {
+    font-weight: bold;
+    float: left;
+    padding-left:15px;
+}
+li {
+    list-style: none;
+    float: right;
+    padding-right:30px;
+    font-weight: bold;
+}
+.menu1 {
+    color: #0060B6;
+    text-decoration: none;
+}
+.bungkus {
+padding-top:60px;
+}
+.listvtuber {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+    border: solid rgb(216, 223, 206) 1px;
+}
+.card img {
+    max-width: 300px;
+    max-height:300px;
+    object-fit: cover;
+}
+.card p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.area {
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.area h1 {
+    color:green;
+    text-align: center;
+}
+.area p {
+    font-weight: lighter;
+    text-align: center;
+}
+footer {
+    background-color:rgba(0, 0, 0, 0.575);
+    width:100%;
+    height: 50px;
+    text-align:center;
+    border-radius: 10px;
+    bottom: 0;
+    right: 0;
+}
+footer p {
+    color: white;
+    padding:15px;
+}
+.yutub {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+    color: red;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.yutub:hover {
+	background-color:transparent;
+}
+.yutub:active {
+	position:relative;
+	top:1px;
+}
+.twit {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+    color:blue;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.twit:hover {
+	background-color:transparent;
+}
+.twit:active {
+	position:relative;
+	top:1px;
+}
+.kartu {
+    background-color:white;
+    width:300px;
+    height:300px;
+    color:black;
+    padding:10px;
+    margin:auto;
+}
+.shadow-drop-2-center{-webkit-animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+ @-webkit-keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+.flip {
+	-webkit-animation: flip 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+ @-webkit-keyframes flip {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) rotateY(180deg);
+            transform: translateZ(160px) rotateY(180deg);
+  }
+}
+@keyframes flip {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) rotateY(180deg);
+            transform: translateZ(160px) rotateY(180deg);
+  }
+}
+
+/**Responsive Phone**/
+@media (max-width: 1000px) {
+  .listvtuber {
+    flex-direction: column;
+    margin:10px;
+    padding:0;
+  }
+  footer {
+    background-color:rgba(0, 0, 0, 0.575);
+    width:100%;
+    height: 50px;
+  }
+}
+
+    </style>
+    
+</head>
+<body>
+
+<!--Mulai Bagian Navigasi-->
+<div class="navbar">
+    <div class="logo">
+        <p>WIBU CENTER</p>
+    </div>
+    <div clas="menu">
+        <ul>
+            <li><a class="menu1" href="#author">Contributor</a></li>
+            <li><a class="menu1" href="#sena">Vtuber</a></li>  
+        </ul>
+    </div>
+</div>
+<!--Akhir Bagian Navigasi-->
+
+<!--Mulai Bagian Konten-->
+<div class="bungkus">
+    <div class="area">
+        <h1>Welcome To Wibu Center</h1>
+        <p>Website Ini Berisi Kumpulan Gambar Serta Profil Karakter Anime Yang Bisa Kalian Download Secara Gratis</p>
+    </div>
+</div>
+
+
+<div class="bungkus">
+    <div class="listvtuber">
+        <div class="card shadow-drop-2-center">
+            <img id="sena" src="https://i.ibb.co/XXTQHV0/Sena-fb-min-08d-Be0-UPX.png">
+            <p>Nekoyama Sena</p>
+            <a href="https://www.youtube.com/channel/UCdVOby6CAPrKCiJBoxUYQ5g" class="yutub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+        </div>
+        <div class="card shadow-drop-2-center">
+            <img id="gura" src="https://i.ibb.co/1rMmtHc/gawr-gura-full-body-render-by-getboolean-deaars0-pre.png">
+            <p>Gawr Gura</p>
+            <a href="https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g" class="yutub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+        </div>
+        <div id="moona" class="card shadow-drop-2-center">
+            <img src="https://i.ibb.co/qBbC9Mv/raf-750x1000-075-t-FFFFFF-97ab1c12de.jpg">
+            <p>Moona Hoshinova</p>
+            <a href="https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg" class="yutub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+        </div>
+        <div class="card shadow-drop-2-center">
+            <img id="lofi" src="https://i.ibb.co/f1z7pTP/EVUEgu-UEAA2-YHS-removebg-preview.png">
+            <p>Airani Iofifteen</p>
+            <a href="https://www.youtube.com/channel/UCAoy6rzhSf4ydcYjJw3WoVg" class="yutub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+        </div>
+    </div>
+</div>
+<!--Akhir Bagian Konten-->
+
+<!--Mulai Bagian Footer-->
+<footer>
+    <p>© Made With ❤ Anym </p>
+</footer>
+<!--Akhir Bagian Footer-->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    const live2d_path = "https://anymhost.com/";
+function loadExternalResource(url, type) {
+	return new Promise((resolve, reject) => {
+		let tag;
+
+		if (type === "css") {
+			tag = document.createElement("link");
+			tag.rel = "stylesheet";
+			tag.href = url;
+		}
+		else if (type === "js") {
+			tag = document.createElement("script");
+			tag.src = url;
+		}
+		if (tag) {
+			tag.onload = () => resolve(url);
+			tag.onerror = () => reject(url);
+			document.head.appendChild(tag);
+		}
+	});
+}
+if (screen.width >= 0) {
+	Promise.all([
+		loadExternalResource(live2d_path + "wibu.css", "css"),
+		loadExternalResource(live2d_path + "live2d.min.js", "js"),
+		loadExternalResource(live2d_path + "bakso.js", "js")
+	]).then(() => {
+		initWidget({
+			waifuPath: live2d_path + "message.json",
+			cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
+		});
+	});
+}
+console.log(`
+  く__,.ヘヽ.        /  ,ー､ 〉
+           ＼ ', !-─‐-i  /  /´
+           ／｀ｰ'       L/／｀ヽ､
+         /   ／,   /|   ,   ,       ',
+       ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
+        ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
+          !,/7 '0'     ´0iソ|    |
+          |.从"    _     ,,,, / |./    |
+          ﾚ'| i＞.､,,__  _,.イ /   .i   |
+            ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
+              | |/i 〈|/   i  ,.ﾍ |  i  |
+             .|/ /  ｉ：    ﾍ!    ＼  |
+              kヽ>､ﾊ    _,.ﾍ､    /､!
+              !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
+              ﾚ'ヽL__|___i,___,ンﾚ|ノ
+                  ﾄ-,/  |___./
+                  'ｰ'    !_,.:
+`);
+
+</script>
+<!--<script>
+Swal.fire({
+    title: 'Welcome Mina-san',
+    text: 'Jika Ingin Unduh Source Codenya Bisa Melalui Github Author',
+    icon: 'info',
+    confirmButtonText: 'Confirm'
+  })
+</script>-->
+
+</body>
+</html>
