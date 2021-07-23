@@ -56,7 +56,7 @@ https://example.com/path/to/Live-2D-Widget/live2d.min.js
 ```
 Access to `live2d.min.js`, then change the value of `live2d_path` to
 ```
-https://example.com/path/to/live2d-widget/
+https://example.com/path/to/Live-2D-Widget/
 ```
 The `/` at the end of the path must be added. For details, please refer to the comments in `autoload.js`.
 After finishing, add in the interface where you want to add the live 2D character
