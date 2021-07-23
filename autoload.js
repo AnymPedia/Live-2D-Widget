@@ -27,7 +27,7 @@ if (screen.width >= 768) {
 	]).then(() => {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
-			cdnPath: "https://cdn.jsdelivr.net/gh/AnymPedia/waifu2d"
+			cdnPath: "https://cdn.jsdelivr.net/gh/AnymPedia/waifuku2d"
 		});
 	});
 }
